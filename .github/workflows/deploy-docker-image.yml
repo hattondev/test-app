@@ -34,6 +34,6 @@ jobs:
           file: ./app/Dockerfile
           push: true
           tags: |
-            ${{secrets.REGISTRY_URL}}/${{github.repository_owner}}/test-app:latest
+            ${{secrets.REGISTRY_URL}}/images/test-app:latest
           labels: |
             org.opencontainers.image.description={{values.component_id}} Docker image
